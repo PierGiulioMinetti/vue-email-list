@@ -1,3 +1,39 @@
+body{
+    background-image: url("https://wallpaperaccess.com/full/782910.jpg");
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container-random-email{
+   
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+button:hover{
+    background-color: #ec16c8;
+    cursor: pointer;
+    border-color:  #ec16c8;
+    color: white;
+}
+
 ul{
     list-style: none;
+}
+
+ol li{
+    color: #20ff00;
+    font-size: 22px;
+}
+
+h1{
+    color: #f466b4c7;
 }

@@ -27,6 +27,7 @@ const app = new Vue({
             })
 
             } //end for loop
+            self.email = [];
         } //end crea lista()
       
     }, //--> end method()

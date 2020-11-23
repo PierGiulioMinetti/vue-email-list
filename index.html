@@ -11,11 +11,19 @@
 </head>
 <body>
     <div class="container" id="app">
-        <ul>
-            <li v-for="element in email">
-               <input type="checkbox"> {{element}}
-            </li>
-        </ul>
+        <div class="container-random-email">
+            <h1>
+                Generate random address from api
+            </h1>
+            <button @click="creaLista">
+                press
+            </button>
+            <ol>
+                <li v-for="element in email">
+                    {{element}}
+                </li>
+            </ol>
+        </div>
     </div>
 
     <!-- axios -->
