@@ -6,22 +6,28 @@ const app = new Vue({
         nome: '',
     },
     created(){
-        // this reference
-       const self = this;
-
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then(function (response) {
-          console.log(response.data.response);
-            self.nome = response.data.response;
-        })
-        .catch(function (error) {
-         
-          console.log(error);
-        }) //end axios
       
+            this.creaLista();
       
     },
-    method: {
+    methods: {
+
+        creaLista(){
+            const self = this;
+            for (let i = 0; i < 10; i++){
+                axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then(function (response) {
+            // handle success
+            console.log(response.data.response);
+            self.email.push(response.data.response);
+        })
+            .catch(function (error) {
+            // handle error
+            console.log(error);
+            })
+
+            } //end for loop
+        } //end crea lista()
       
     }, //--> end method()
 

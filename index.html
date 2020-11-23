@@ -12,8 +12,8 @@
 <body>
     <div class="container" id="app">
         <ul>
-            <li>
-                {{nome}}
+            <li v-for="element in email">
+               <input type="checkbox"> {{element}}
             </li>
         </ul>
     </div>
